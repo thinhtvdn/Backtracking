@@ -54,7 +54,7 @@ namespace Backtracking
                 return true; // Nếu tìm thấy chìa khóa
             }
 
-            // Tiến hành kiểm tra phòng tiếp theo
+            // Tiến hành kiểm tra phòng tiếp theo, tìm không thấy thì quay lui, tìm phòng khác
             return FindKey(rooms, keys, keyToFind, index + 1);
         }
         private void Form1_Load(object sender, EventArgs e)
